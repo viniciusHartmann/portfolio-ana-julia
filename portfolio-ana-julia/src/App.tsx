@@ -1,4 +1,4 @@
-import { Button, Typography } from 'antd';
+// import { Button, Typography } from 'antd';
 import { useRef } from 'react';
 import './App.css';
 
@@ -7,9 +7,9 @@ const { Title, Paragraph } = Typography;
 function App() {
   const contatoRef = useRef<HTMLDivElement>(null);
 
-  const scrollParaContato = () => {
-    contatoRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+  // const scrollParaContato = () => {
+  //   contatoRef.current?.scrollIntoView({ behavior: 'smooth' });
+  // };
 
   return (
     <>
