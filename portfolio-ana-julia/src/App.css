@@ -1,13 +1,8 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
   font-family: 'Dancing Script', cursive !important;
 }
 
-/* Fonte global para elementos principais */
 html,
 body,
 h1,
@@ -21,66 +16,3 @@ span,
 button {
   font-family: 'Dancing Script', cursive !important;
 }
-
-.secao {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 60vh;
-  width: 100vw;
-  padding: 2rem;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-/* Primeira seção (principal) */
-.secao-principal {
-  background-color: #f8f5e6;
-  width: 100vw;
-  /* largura total da viewport */
-  height: 100vw;
-  /* altura total da viewport */
-  display: flex;
-  /* garantir flex para centralizar conteúdo */
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  /* mantém o espaçamento interno */
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.conteudo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* CENTRALIZA VERTICALMENTE */
-  align-items: center;
-  /* CENTRALIZA HORIZONTALMENTE */
-  height: 100%;
-  /* para pegar a altura da seção pai */
-  width: 100%;
-  /* opcional, para garantir largura total */
-}
-
-/* Quadrado decorativo no topo */
-.quadrado {
-  width: 100px;
-  height: 100px;
-  background-color: #60051b;
-  border-radius: 8px;
-  margin: 0;
-}
-
-h1.nomeProfissional {
-  color: #60051b;
-  margin: 0;
-}
-
-.paragrafoMedica {
-  font-family: 'Dancing Script', cursive !important;
-  color: #fabbcb;
-  margin: 0;
-}
-
-/*Sessão DOIS*/
