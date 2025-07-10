@@ -91,14 +91,85 @@ function App() {
         </Row>
       </Content>
 
-      <Content ref={contatoRef} className="secao" style={{
+      {/* Frase de efeito */}
+      <Content className="secao secao-principal" style={{
+        background: '#f8f5e6',
         minHeight: '100vh',
         minWidth: '100vw',
-        backgroundColor: '#ffe0e0',
-        padding: '40px 20px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
       }}>
-        <Title level={2}>Contato</Title>
-        <Paragraph>Email: ana.julia@email.com</Paragraph>
+        <div className="conteudo" style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          textAlign: 'center'
+        }}>
+          <Title className='fraseEfeito' level={1} style={{ margin: '0px 0 -4px', fontSize: '-webkit-xxx-large' }}>O mundo é lindo, e os animais merecem ver cada detalhe</Title>
+          <Button type="primary" size="large"
+            style={{
+              backgroundColor: '#d2d741',
+              color: '#000',
+              border: 'none',
+              borderRadius: '8px',
+              fontWeight: 'bold',
+              width: '400px',
+              height: '50px',
+              letterSpacing: '2px',
+              fontSize: '20px',
+            }} onClick={() => window.open('https://videos1.memedroid.com/videos/UPLOADED835/583a0d7eb8dc9.jpeg', '_blank')}>
+            Entre em contato!
+          </Button>
+        </div>
+      </Content>
+
+      {/* Sobre mim */}
+      <Content
+        ref={contatoRef}
+        className="secao"
+        style={{
+          minHeight: '100vh',
+          minWidth: '100vw',
+          backgroundColor: '#fff',
+          padding: '40px 20px',
+        }}
+      >
+        {/* Títulos centralizados acima dos quadrados */}
+        <Row gutter={[32, 16]} justify="center">
+          <Col xs={24} md={10}>
+            <Title level={2} style={{ textAlign: 'center', color: '#60051b' }}>Sobre mim:</Title>
+          </Col>
+          <Col xs={24} md={10}>
+            <Title level={2} style={{ textAlign: 'center', color: '#60051b' }}>Desenvolvimento Profissional:</Title>
+          </Col>
+        </Row>
+
+        {/* Linha com os dois quadrados grandes */}
+        <Row gutter={[32, 16]} justify="center" style={{ marginTop: '20px' }}>
+          <Col xs={24} md={10}>
+            <div style={{
+              backgroundColor: '#f8f5e6',
+              borderRadius: '8px',
+              padding: '20px',
+              minHeight: '450px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+            }}>
+              <Paragraph>Eu estudei no ifc, lá em concórdia SC, conheci meu grande amor lá, no meio da roça e me apaixonei perdidamente, hoje, amém sou CASADA.</Paragraph>
+            </div>
+          </Col>
+          <Col xs={24} md={10}>
+            <div style={{
+              backgroundColor: '#f8f5e6',
+              borderRadius: '8px',
+              padding: '20px',
+              minHeight: '450px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+            }}>
+              <Paragraph>Eu sou muito boa com olhos, tenho uma boa experiência, fiz estágio atrás de estágio, me dediquei bastante pra chegar até aqui, agradeço a todos os envolvidos, agora estou em busca de ficar rica pra poder viajar bastante.</Paragraph>
+            </div>
+          </Col>
+        </Row>
       </Content>
     </Layout>
   );
